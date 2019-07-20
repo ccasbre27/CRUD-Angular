@@ -22,13 +22,20 @@ export class HeroeComponent implements OnInit {
     if ( form.invalid ) {
       return;
     }
-    console.log(form);
-    console.log(this.heroe);
-
-    this.heroesService.addHeroe( this.heroe )
+    
+    if ( this.heroe.id ) {
+      this.heroesService.updateHeroe( this.heroe )
       .subscribe( resp => {
         console.log(resp);
       });
+    } else {
+      this.heroesService.addHeroe( this.heroe )
+      .subscribe( resp => {
+        console.log(resp);
+      });
+    }
+
+    
   }
 
 }
