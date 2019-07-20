@@ -30,7 +30,15 @@
                 <label *ngIf="heroe.isLive" class="badge badge-success">Live</label>
                 <label *ngIf="!heroe.isLive" class="badge badge-danger">Dead</label>
             </td>
-            <td></td>
+            <td>
+                <button [routerLink]="['/heroe', heroe.id]" class="btn btn-info mr-2">
+                    <i class="fa fa-pencil"></i>
+                </button>
+
+                <button class="btn btn-danger">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </td>
         </tr>
 
     </tbody>
