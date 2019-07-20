@@ -1,27 +1,31 @@
 # CrudApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
+This project was developed in Angular. It is a webpage that uses the REST API from Firebase to add, update and delete information about heroes.
 
-## Development server
+## Angular items
+I am using different items of Angular for example:
++ Components
++ Services
++ Custom routes
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Libraries
++ Bootstrap
++ Font-Awesome
++ Sweet Alert
 
-## Code scaffolding
+## Screenshots
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Home page: loading
+![](path/loading.png?raw=true)
 
-## Build
+Home page: displays all the records
+![](path/list.png?raw=true)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Add page: allow the user to add a new record
+![](path/add.png?raw=true)
 
-## Running unit tests
+Add page: message to inform the user the status of the action
+![](path/added_succesfully.png?raw=true)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Delete action: message to confirm the action
+![](path/delete.png?raw=true)
